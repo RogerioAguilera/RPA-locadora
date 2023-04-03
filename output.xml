@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.9.13 on linux)" generated="20230402 21:28:48.507" rpa="true" schemaversion="3">
+<suite id="s1" name="Tests" source="/home/rogeraguilera/robocorp-locadora-guitarra/tests">
+<suite id="s1-s1" name="Login" source="/home/rogeraguilera/robocorp-locadora-guitarra/tests/login.robot">
+<test id="s1-s1-t1" name="Acessar área logada com sucesso" line="13">
+<kw name="Deve acessar a área logada 5 vezes">
+<for flavor="IN RANGE">
+<var>${i}</var>
+<value>5</value>
+<iter>
+<var name="${i}">0</var>
+<kw name="Open Browser" library="RPA.Browser.Selenium">
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230402 21:28:49.785" level="INFO">Opening browser 'chrome' to base url 'http://zepalheta-web:3000/'.</msg>
+<status status="PASS" starttime="20230402 21:28:49.784" endtime="20230402 21:28:53.465"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230402 21:28:55.468" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230402 21:28:53.467" endtime="20230402 21:28:55.470"/>
+</kw>
+<kw name="Input Text" library="RPA.Browser.Selenium">
+<arg>css=#txtEmail</arg>
+<arg>admin@zepalheta.com.br</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230402 21:28:55.476" level="INFO">Typing text 'admin@zepalheta.com.br' into text field 'css=#txtEmail'.</msg>
+<status status="PASS" starttime="20230402 21:28:55.472" endtime="20230402 21:28:55.744"/>
+</kw>
+<kw name="Input Password" library="RPA.Browser.Selenium">
+<arg>css=input[placeholder='Senha']</arg>
+<arg>pwd123</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20230402 21:28:55.745" level="INFO">Typing password into text field 'css=input[placeholder='Senha']'.</msg>
+<msg timestamp="20230402 21:28:55.807" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20230402 21:28:55.872" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20230402 21:28:55.744" endtime="20230402 21:28:55.873"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230402 21:28:58.875" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230402 21:28:55.874" endtime="20230402 21:28:58.877"/>
+</kw>
+<kw name="Click Button" library="RPA.Browser.Selenium">
+<arg>xpath=(//button[normalize-space()='Entrar'])[1]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230402 21:28:58.882" level="INFO">Clicking button 'xpath=(//button[normalize-space()='Entrar'])[1]'.</msg>
+<status status="PASS" starttime="20230402 21:28:58.879" endtime="20230402 21:28:59.137"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>6s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230402 21:29:05.142" level="INFO">Slept 6 seconds</msg>
+<status status="PASS" starttime="20230402 21:28:59.139" endtime="20230402 21:29:05.143"/>
+</kw>
+<kw name="Wait Until Element Contains" library="RPA.Browser.Selenium">
+<arg>xpath=//h1[normalize-space()='Aluguéis']</arg>
+<arg>Aluguéis</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="PASS" starttime="20230402 21:29:05.145" endtime="20230402 21:29:05.249"/>
+</kw>
+<status status="PASS" starttime="20230402 21:28:49.784" endtime="20230402 21:29:05.250"/>
+</iter>
+<iter>
+<var name="${i}">1</var>
+<kw name="Open Browser" library="RPA.Browser.Selenium">
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230402 21:29:05.253" level="INFO">Opening browser 'chrome' to base url 'http://zepalheta-web:3000/'.</msg>
+<status status="PASS" starttime="20230402 21:29:05.252" endtime="20230402 21:29:08.788"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230402 21:29:10.805" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230402 21:29:08.799" endtime="20230402 21:29:10.809"/>
+</kw>
+<kw name="Input Text" library="RPA.Browser.Selenium">
+<arg>css=#txtEmail</arg>
+<arg>admin@zepalheta.com.br</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230402 21:29:10.817" level="INFO">Typing text 'admin@zepalheta.com.br' into text field 'css=#txtEmail'.</msg>
+<status status="PASS" starttime="20230402 21:29:10.811" endtime="20230402 21:29:11.213"/>
+</kw>
+<kw name="Input Password" library="RPA.Browser.Selenium">
+<arg>css=input[placeholder='Senha']</arg>
+<arg>pwd123</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20230402 21:29:11.214" level="INFO">Typing password into text field 'css=input[placeholder='Senha']'.</msg>
+<msg timestamp="20230402 21:29:11.268" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20230402 21:29:11.356" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20230402 21:29:11.214" endtime="20230402 21:29:11.357"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230402 21:29:14.360" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230402 21:29:11.359" endtime="20230402 21:29:14.361"/>
+</kw>
+<kw name="Click Button" library="RPA.Browser.Selenium">
+<arg>xpath=(//button[normalize-space()='Entrar'])[1]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230402 21:29:14.363" level="INFO">Clicking button 'xpath=(//button[normalize-space()='Entrar'])[1]'.</msg>
+<status status="PASS" starttime="20230402 21:29:14.362" endtime="20230402 21:29:14.654"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>6s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230402 21:29:20.659" level="INFO">Slept 6 seconds</msg>
+<status status="PASS" starttime="20230402 21:29:14.656" endtime="20230402 21:29:20.660"/>
+</kw>
+<kw name="Wait Until Element Contains" library="RPA.Browser.Selenium">
+<arg>xpath=//h1[normalize-space()='Aluguéis']</arg>
+<arg>Aluguéis</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="PASS" starttime="20230402 21:29:20.662" endtime="20230402 21:29:20.798"/>
+</kw>
+<status status="PASS" starttime="20230402 21:29:05.251" endtime="20230402 21:29:20.798"/>
+</iter>
+<iter>
+<var name="${i}">2</var>
+<kw name="Open Browser" library="RPA.Browser.Selenium">
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230402 21:29:20.801" level="INFO">Opening browser 'chrome' to base url 'http://zepalheta-web:3000/'.</msg>
+<msg timestamp="20230402 21:29:27.133" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: invalid session id
+Stacktrace:
+#0 0x55d796618243 &lt;unknown&gt;
+#1 0x55d7963dc631 &lt;unknown&gt;
+#2 0x55d79640c4f4 &lt;unknown&gt;
+#3 0x55d79640db2e &lt;unknown&gt;
+#4 0x55d79666cd5e &lt;unknown&gt;
+#5 0x55d796670a80 &lt;unknown&gt;
+#6 0x55d7966528b0 &lt;unknown&gt;
+#7 0x55d796671b63 &lt;unknown&gt;
+#8 0x55d796643f75 &lt;unknown&gt;
+#9 0x55d796694998 &lt;unknown&gt;
+#10 0x55d796694b27 &lt;unknown&gt;
+#11 0x55d7966afc23 &lt;unknown&gt;
+#12 0x7f786bb4d609 start_thread
+</msg>
+<msg timestamp="20230402 21:29:27.140" level="FAIL">WebDriverException: Message: unknown error: session deleted because of page crash
+from unknown error: cannot determine loading status
+from tab crashed
+  (Session info: chrome=111.0.5563.64)
+Stacktrace:
+#0 0x55d796618243 &lt;unknown&gt;
+#1 0x55d7963dc631 &lt;unknown&gt;
+#2 0x55d7963c8602 &lt;unknown&gt;
+#3 0x55d7963c7aec &lt;unknown&gt;
+#4 0x55d7963c6bf8 &lt;unknown&gt;
+#5 0x55d7963c6a30 &lt;unknown&gt;
+#6 0x55d7963c5508 &lt;unknown&gt;
+#7 0x55d7963c5cb2 &lt;unknown&gt;
+#8 0x55d7963d30bf &lt;unknown&gt;
+#9 0x55d7963d3d12 &lt;unknown&gt;
+#10 0x55d7963e3f5b &lt;unknown&gt;
+#11 0x55d7963e800b &lt;unknown&gt;
+#12 0x55d7963c6173 &lt;unknown&gt;
+#13 0x55d7963e3b88 &lt;unknown&gt;
+#14 0x55d796452b47 &lt;unknown&gt;
+#15 0x55d796439e53 &lt;unknown&gt;
+#16 0x55d79640c9ea &lt;unknown&gt;
+#17 0x55d79640db2e &lt;unknown&gt;
+#18 0x55d79666cd5e &lt;unknown&gt;
+#19 0x55d796670a80 &lt;unknown&gt;
+#20 0x55d7966528b0 &lt;unknown&gt;
+#21 0x55d796671b63 &lt;unknown&gt;
+#22 0x55d796643f75 &lt;unknown&gt;
+#23 0x55d796694998 &lt;unknown&gt;
+#24 0x55d796694b27 &lt;unknown&gt;
+#25 0x55d7966afc23 &lt;unknown&gt;
+#26 0x7f786bb4d609 start_thread
+</msg>
+<status status="FAIL" starttime="20230402 21:29:20.800" endtime="20230402 21:29:27.180"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230402 21:29:27.186" endtime="20230402 21:29:27.190"/>
+</kw>
+<kw name="Input Text" library="RPA.Browser.Selenium">
+<arg>css=#txtEmail</arg>
+<arg>admin@zepalheta.com.br</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230402 21:29:27.192" endtime="20230402 21:29:27.192"/>
+</kw>
+<kw name="Input Password" library="RPA.Browser.Selenium">
+<arg>css=input[placeholder='Senha']</arg>
+<arg>pwd123</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230402 21:29:27.193" endtime="20230402 21:29:27.194"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230402 21:29:27.194" endtime="20230402 21:29:27.195"/>
+</kw>
+<kw name="Click Button" library="RPA.Browser.Selenium">
+<arg>xpath=(//button[normalize-space()='Entrar'])[1]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230402 21:29:27.195" endtime="20230402 21:29:27.195"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>6s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230402 21:29:27.196" endtime="20230402 21:29:27.196"/>
+</kw>
+<kw name="Wait Until Element Contains" library="RPA.Browser.Selenium">
+<arg>xpath=//h1[normalize-space()='Aluguéis']</arg>
+<arg>Aluguéis</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="NOT RUN" starttime="20230402 21:29:27.197" endtime="20230402 21:29:27.197"/>
+</kw>
+<status status="FAIL" starttime="20230402 21:29:20.799" endtime="20230402 21:29:27.198"/>
+</iter>
+<status status="FAIL" starttime="20230402 21:28:49.783" endtime="20230402 21:29:27.198"/>
+</for>
+<kw name="Close Browser" library="RPA.Browser.Selenium">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20230402 21:29:27.199" endtime="20230402 21:29:27.199"/>
+</kw>
+<status status="FAIL" starttime="20230402 21:28:49.783" endtime="20230402 21:29:27.200"/>
+</kw>
+<status status="FAIL" starttime="20230402 21:28:49.781" endtime="20230402 21:29:27.204">WebDriverException: Message: unknown error: session deleted because of page crash
+from unknown error: cannot determine loading status
+from tab crashed
+  (Session info: chrome=111.0.5563.64)
+Stacktrace:
+#0 0x55d796618243 &lt;unknown&gt;
+#1 0x55d7963dc631 &lt;unknown&gt;
+#2 0x55d7963c8602 &lt;unknown&gt;
+#3 0x55d7963c7aec &lt;unknown&gt;
+#4 0x55d7963c6bf8 &lt;unknown&gt;
+#5 0x55d7963c6a30 &lt;unknown&gt;
+#6 0x55d7963c5508 &lt;unknown&gt;
+#7 0x55d7963c5cb2 &lt;unknown&gt;
+#8 0x55d7963d30bf &lt;unknown&gt;
+#9 0x55d7963d3d12 &lt;unknown&gt;
+#10 0x55d7963e3f5b &lt;unknown&gt;
+#11 0x55d7963e800b &lt;unknown&gt;
+#12 0x55d7963c6173 &lt;unknown&gt;
+#13 0x55d7963e3b88 &lt;unknown&gt;
+#14 0x55d796452b47 &lt;unknown&gt;
+#15 0x55d796439e53 &lt;unknown&gt;
+#16 0x55d79640c9ea &lt;unknown&gt;
+#17 0x55d79640db2e &lt;unknown&gt;
+#18 0x55d79666cd5e &lt;unknown&gt;
+#19 0x55d796670a80 &lt;unknown&gt;
+#20 0x55d7966528b0 &lt;unknown&gt;
+#21 0x55d796671b63 &lt;unknown&gt;
+#22 0x55d796643f75 &lt;unknown&gt;
+#23 0x55d796694998 &lt;unknown&gt;
+#24 0x55d796694b27 &lt;unknown&gt;
+#25 0x55d7966afc23 &lt;unknown&gt;
+#26 0x7f786bb4d609 start_thread
+</status>
+</test>
+<doc>Teste de sessão da área logada</doc>
+<status status="FAIL" starttime="20230402 21:28:48.569" endtime="20230402 21:29:27.212"/>
+</suite>
+<status status="FAIL" starttime="20230402 21:28:48.517" endtime="20230402 21:29:27.217"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tasks</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Login">Tests.Login</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230402 21:28:49.776" level="WARN">JavaAccessBridge library requires Windows dependencies to work</msg>
+<msg timestamp="20230402 21:28:49.776" level="WARN">Environment variable `RC_JAVA_ACCESS_BRIDGE_DLL` needs to be set to absolute path of `WindowsAccessBridge-64.dll`</msg>
+<msg timestamp="20230402 21:29:27.133" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: invalid session id
+Stacktrace:
+#0 0x55d796618243 &lt;unknown&gt;
+#1 0x55d7963dc631 &lt;unknown&gt;
+#2 0x55d79640c4f4 &lt;unknown&gt;
+#3 0x55d79640db2e &lt;unknown&gt;
+#4 0x55d79666cd5e &lt;unknown&gt;
+#5 0x55d796670a80 &lt;unknown&gt;
+#6 0x55d7966528b0 &lt;unknown&gt;
+#7 0x55d796671b63 &lt;unknown&gt;
+#8 0x55d796643f75 &lt;unknown&gt;
+#9 0x55d796694998 &lt;unknown&gt;
+#10 0x55d796694b27 &lt;unknown&gt;
+#11 0x55d7966afc23 &lt;unknown&gt;
+#12 0x7f786bb4d609 start_thread
+</msg>
+</errors>
+</robot>
